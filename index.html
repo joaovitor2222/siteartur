@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site do Canal ArturGamesMods_oficial</title>
+  <style>
+    /* Estilos dos steps */
+    .step {
+      margin-bottom: 20px;
+      padding: 10px;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .step:hover {
+      background: #00aaff;
+      color: black;
+    }
+    /* Conteúdo escondido */
+    .step-content {
+      display: none;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    /* Botões de jogo */
+    .game-button {
+      display: inline-block;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+    /* Cabeçalho do site */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto;
+    }
+    .header button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background: #cc0000;
+      color: white;
+      cursor: pointer;
+    }
+    .header button:hover {
+      background: #ff0000;
+    }
+    iframe {
+    max-width: 100%;
+    height: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <p>(meu vídeo mais antigo)</p>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/sf6WrFdsa1Q?si=02LfRRp55hH3rIRr"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+
+    <img src="https://yt3.googleusercontent.com/9TvORXzDTMmTe2IrwdWoLRGANk_raqgBSYaS_vyMkHyDYiTU13TV7HLXWkxzaAbvkwFR7dfV=s160-c-k-c0x00ffffff-no-rj"
+         alt="Foto de perfil">
+
+<p>
+  <a href="https://www.youtube.com/@ArturGamesMods_oficial" target="_blank">
+    <button style="background: #cc0000;">Canal do Artur Games & Mods</button>
+  </a>
+</p>
+
+<p>
+  <a href="https://www.youtube.com/@isobu2222" target="_blank">
+    <button style="background: #8800cc;">Canal do Isobu (irmão do Artur)</button>
+  </a>
+</p>
+
+    
+  </div>
+
+  <!-- Step 1: Tower Defense Teste -->
+  <div class="step" onclick="toggleStep(1)">Tower Defense Teste</div>
+  <div id="step1" class="step-content">
+    <p>Um jogo de defesa de torre clássico: compre torres, posicione-as estrategicamente e impeça os inimigos de chegar até você.</p>
+    <a href="https://joaovitor2222.github.io/towerdefense_teste/" target="_blank"
+       class="game-button" style="background: #6f42c1;">
+      Jogar Tower Defense Teste
+    </a>
+  </div>
+
+  <!-- Step 2: Perseguição -->
+  <div class="step" onclick="toggleStep(2)">Perseguição</div>
+  <div id="step2" class="step-content">
+    <p>Fuja do EUA Ball antes que ele te alcance. Na luz vermelha, ele anda mais rápido. A cada passo você acumula moedas para melhorar seu personagem.</p>
+    <a href="https://joaovitor2222.github.io/perseguicao/" target="_blank"
+       class="game-button" style="background: #fd7e14;">
+      Jogar Perseguição
+    </a>
+  </div>
+
+  <!-- Step 3: RPG Chat -->
+  <div class="step" onclick="toggleStep(3)">RPG Chat</div>
+  <div id="step3" class="step-content">
+    <p>Jogo de RPG onde você evolui seu personagem com equipamentos dropados pelos inimigos ou recruta aliados para seu time.</p>
+    <a href="https://joaovitor2222.github.io/rpgchat/" target="_blank"
+       class="game-button" style="background: #6610f2;">
+      Jogar RPG Chat
+    </a>
+  </div>
+
+  <!-- Step 4: Corrida Infinita -->
+  <div class="step" onclick="toggleStep(4)">Corrida Infinita</div>
+  <div id="step4" class="step-content">
+    <p>Uma corrida infinita no estilo Subway Surfers, mas com power‑ups de tiro e diversas melhorias compráveis.</p>
+    <a href="https://joaovitor2222.github.io/Corrida/" target="_blank"
+       class="game-button" style="background: #20c997;">
+      Jogar Corrida Infinita
+    </a>
+  </div>
+
+  <!-- Step 5: Tower Defense Reverso (1 de abril) -->
+  <div class="step" onclick="toggleStep(5)">Tower Defense Reverso (1 de abril)</div>
+  <div id="step5" class="step-content">
+    <p>Ao invés de você posicionar as torres, o computador faz isso e suas tropas disparam no eixo X. Cuidado!</p>
+    <a href="https://joaovitor2222.github.io/jogozueira/index.html" target="_blank"
+       class="game-button" style="background: #dc3545;">
+      Jogar Tower Defense Reverso
+    </a>
+  </div>
+
+  <!-- Step 6: Dinos -->
+  <div class="step" onclick="toggleStep(6)">Dinos</div>
+  <div id="step6" class="step-content">
+    <p>Você tem um orçamento para se defender dos dinossauros que a IA manda. Também pode testar times de criaturas jurássicas.</p>
+    <a href="https://joaovitor2222.github.io/dinos/index.html" target="_blank"
+       class="game-button" style="background: #ffc107; color: black;">
+      Jogar Dinos
+    </a>
+  </div>
+
+  <!-- Step 7: Jogo 3D -->
+  <div class="step" onclick="toggleStep(7)">Jogo 3D</div>
+  <div id="step7" class="step-content">
+    <p>Um desafio 3D em HTML: derrote inimigos triangulares com serrinhas e tiros. Cada morto gera outro mais forte.</p>
+    <a href="https://joaovitor2222.github.io/jogo3d/index.html" target="_blank"
+       class="game-button" style="background: #007bff;">
+      Jogar Jogo 3D
+    </a>
+  </div>
+
+  <!-- Step 8: Fazenda -->
+  <div class="step" onclick="toggleStep(8)">Fazenda</div>
+  <div id="step8" class="step-content">
+    <p>O jogo mais tranquilo: plante diversas culturas, use adubos e tente chegar a 1 milhão de moedas. Só cuidado com os ladrões!</p>
+    <a href="https://joaovitor2222.github.io/fazenda/index.html" target="_blank"
+       class="game-button" style="background: #28a745;">
+      Jogar Fazenda
+    </a>
+  </div>
+
+  <!-- Step 9: Parceiros -->
+  <div class="step" onclick="toggleStep(9)">Parceiros</div>
+  <div id="step9" class="step-content">
+    <ul>
+      <li>Arabian Brazilian Proasso – <a href="https://www.youtube.com/@brazilianyt-nf8" target="_blank">Canal</a></li>
+      <li>Loft Craft – <a href="https://www.youtube.com/@loftcraft348" target="_blank">Canal</a></li>
+      <li>RIOBALL🇧🇷 (AG) #NuevaEraSitcker – <a href="https://www.youtube.com/@RIOBALL300" target="_blank">Canal</a></li>
+      <li>Vitor Neves – <a href="https://www.youtube.com/@vitorneves1162" target="_blank">Canal</a></li>
+      <li>China Ball Oficial – <a href="https://www.youtube.com/@china_balloficialseinscreva" target="_blank">Canal</a></li>
+      <li>Duan Countryballs – <a href="https://www.youtube.com/@Duanzitoyytofc01" target="_blank">Canal</a></li>
+      <li>🇵🇾Paraguai Redondo – <a href="https://www.youtube.com/@Paraguaibola" target="_blank">Canal</a></li>
+      <li>_WhiteBalls01 – <a href="https://www.youtube.com/@WhiteBalls" target="_blank">Canal</a></li>
+      <li>BislachaZoa – <a href="https://www.youtube.com/@BislachaZoa" target="_blank">Canal</a></li>
+      <li>Cauã Rsmos Country – <a href="https://www.youtube.com/@cauarsmos1345" target="_blank">Canal</a></li>
+      <li>Brasil Ball – <a href="https://www.youtube.com/@brasilball_01" target="_blank">Canal</a></li>
+      <li>Juninho Original – <a href="https://www.youtube.com/@Juninhocountryball" target="_blank">Canal</a> <span style="color: red;">se inscrevam no canal dele pq ele perdeu o canal 😥</span></li>
+      <li>Player – <a href="https://www.youtube.com/@Player2-b3t" target="_blank">Canal</a></li>
+      <li>⚡•Netuno Ball•⚡ – <a href="https://www.youtube.com/@Netuno_Ball01" target="_blank">Canal</a> <span style="color: cyan;">antigo panamá ball</span></li>
+      <li>goatzinho balls #NuevaErastickers – <a href="https://www.youtube.com/@andersonguiradolemes5703" target="_blank">Canal</a></li>
+    </ul>
+  </div>
+
+    <script>
+    function toggleStep(stepNumber) {
+      let stepContent = document.getElementById(`step${stepNumber}`);
+      if (stepContent.style.display === "block") {
+        stepContent.style.display = "none";
+      } else {
+        stepContent.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
