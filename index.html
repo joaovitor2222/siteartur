@@ -296,14 +296,32 @@ body::before {
 
   <h2>se inscreva no meu canal, no canal do meu irmão e no canal dos meus parceiros.</h2>
 
-    <!-- Seção Minigame -->
-  <p class="section-title">Minigame: teste sua sorte</p>
+<!-- Seção Minigame -->
+<p class="section-title">Minigame: teste sua sorte</p>
+
+<!-- Step explicando o Minigame -->
+<div class="step" onclick="toggleStep(11)">🎮 Como jogar o Minigame</div>
+<div id="step11" class="step-content">
+  <p>Esse minigame é um jogo de adivinhação simples e divertido!</p>
+  <ul>
+    <li>🔢 Você precisa adivinhar um número entre <strong>1 e 100</strong>.</li>
+    <li>⬆️ O jogo te diz se o número é maior ou menor que o seu palpite.</li>
+    <li>💡 A cada <strong>3 tentativas erradas</strong>, aparece uma <strong>dica bônus</strong> com números próximos do número correto.</li>
+    <li>🏆 Quando acertar, você é redirecionado para um vídeo surpresa!</li>
+  </ul>
+
+  <p style="margin-top: 10px;">🎯 Jogar o minigame:</p>
   <button
     class="game-button"
     style="background: #17a2b8;"
     onclick="startMiniGame()">
     Tente sua sorte!
   </button>
+
+  <p style="margin-top: 10px;">Clique no botão acima e veja se você é sortudo 😁</p>
+</div>
+
+
 
     <script>
       function startMiniGame() {
