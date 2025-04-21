@@ -343,20 +343,35 @@ body::before {
         }
 
         // dica bônus a cada 3 erros
-        if (attempts % 3 === 0) {
-          const width = Math.floor(Math.random() * 20) + 1; // 1 a 20
-          const lowStart = Math.max(1, secret - width);
-          const lowEnd   = secret - 1;
-          const hiStart  = secret + 1;
-          const hiEnd    = Math.min(100, secret + width);
+    // dica bônus a cada 3 erros
+    if (attempts % 3 === 0) {
+      const maxDiff = 10;
+      const width  = Math.floor(Math.random() * maxDiff) + 1; // 1–10 de diferença
+      
+      const hints = [];
+      // palpite para baixo
+      const lowMin = Math.max(1, secret - width);
+      const lowMax = secret - 1;
+      if (lowMax >= lowMin) {
+        const lowHint = Math.floor(Math.random() * (lowMax - lowMin + 1)) + lowMin;
+        hints.push(lowHint);
+      }
+      // palpite para cima
+      const hiMin = secret + 1;
+      const hiMax = Math.min(100, secret + width);
+      if (hiMax >= hiMin) {
+        const hiHint = Math.floor(Math.random() * (hiMax - hiMin + 1)) + hiMin;
+        hints.push(hiHint);
+      }
 
-          alert(
-            `🔍 Dica bônus: o número está entre ` +
-            `${lowStart} e ${lowEnd}` +
-            ` ou entre ` +
-            `${hiStart} e ${hiEnd}.`
-          );
-        }
+      if (hints.length) {
+        const msg = hints
+          .map(n => `próximo de ${n}`)
+          .join(' ou ');
+        alert(`🔍 Dica bônus: o número está ${msg}.`);
+      }
+    }
+
       }
     }
       
